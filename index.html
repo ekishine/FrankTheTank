@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank's Cosmic Journey</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frank's Adventure</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  #background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /* Place image behind any other content on the page */
+  }
+</style>
 </head>
 <body>
-    <!-- Your content goes here -->
-    <div id="greetings-page">
-        <img src="path-to-your-greetings-image" alt="Greetings Image">
-        <!-- Add your text and buttons here -->
-    </div>
+<img src="images/start.png" id="background-image" alt="Start Image">
 </body>
 </html>
