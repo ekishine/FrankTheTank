@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frank's Adventure</title>
-  <!-- Embed CSS directly in HTML including Google Font import -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap');
 
@@ -54,11 +53,10 @@
       position: fixed;
       top: 0;
       left: 0;
-      height: 100%;
-      width: 100%;
+      right: 0;
+      bottom: 0;
       z-index: -1;
-      background-position: center center;
-      background-repeat: no-repeat;
+      background: url('images/start.png') center center no-repeat;
       background-size: cover;
     }
 
@@ -81,17 +79,16 @@
       margin: 0 auto;
     }
   </style>
-  <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- CircleType.js for curved text -->
-  <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
 </head>
 <body>
-    <div id="message-container">
-        <div id="welcome-message"><h1>Welcome, Master Jedi! Your quest beckons...</h1></div>
+  <div id="background-image"></div> <!-- Background image now set with a div -->
+  <div id="message-container">
+    <div id="welcome-message">
+      <h1>Welcome, Master Jedi! Your quest beckons...</h1>
     </div>
-    <img src="images/start.png" id="background-image" alt="Star Image">
-    <script src="scripts_v2.js"></script>
+  </div>
+  <script src="scripts_v2.js"></script>
 </body>
 </html>
