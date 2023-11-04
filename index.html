@@ -25,12 +25,19 @@
       z-index: -1; /* Keep the image behind the content */
     }
 
+  #message-container {
+    width: 100%;
+    position: absolute;
+    top: 200px; /* Replace with the pixel value that matches the arch position */
+    text-align: center;
+  }
+/* Media query example for screens that are up to 600px wide */
+  @media (max-width: 600px) {
     #message-container {
-      width: 100%;
-      position: absolute;
-      top: 20%; /* Adjust this to position your message container */
-      text-align: center; /* Center the inline-block (text) horizontally */
+      top: 150px; /* Adjust top position for smaller screens */
     }
+  }
+
 
     #welcome-message h1 {
       font-size: 4em;
