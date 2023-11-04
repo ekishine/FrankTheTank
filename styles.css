@@ -70,25 +70,22 @@ img {
 }
 
 /* Target h1 within the welcome-message div */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600&display=swap');
+/* ... other styles ... */
+
 #welcome-message h1 {
-    font-family: 'Arial', sans-serif; /* Replace with your desired font */
-    font-size: 3em; /* Adjust the size as needed */
+    font-family: 'Oxanium', sans-serif; /* Now using the Oxanium font */
+    font-size: 4em; /* Adjust the size as needed */
     color: white; /* Fallback color */
-    background: -webkit-linear-gradient(white, yellow); /* For Safari 5.1 to 6.0 */
-    background: linear-gradient(white, yellow); /* Standard syntax for gradient */
+    background: linear-gradient(white, yellow); /* Gradient text color */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Text border effect */
     text-align: center;
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000; /* Simulated border effect using shadow */
+    margin-top: 33vh; /* Adjust margin to place text in the upper third of the viewport */
+    display: block;
+    position: relative;
 }
 
-/* Since the actual text is invisible due to 'text-fill-color: transparent', we apply the shadow to the background which is clipped to the text */
 
 
