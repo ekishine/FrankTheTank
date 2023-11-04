@@ -68,3 +68,15 @@ img {
   background-repeat: no-repeat;
   background-size: cover; /* Cover the whole window regardless of size */
 }
+
+/* Target h1 within the welcome-message div */
+#welcome-message h1 {
+  font-family: 'Dancing Script', cursive; /* Use the font you imported */
+  font-size: 4em; /* Adjust size to fit your design */
+  color: white; /* Choose the text color that fits your theme */
+  text-align: center; /* Center the text horizontally */
+  padding-top: 10%; /* Adjust padding to position your text vertically */
+  transform: rotate(-2deg) skew(-5deg); /* Add some "melting" effect */
+  text-shadow: 2px 2px 4px #000; /* Shadow for text for better readability */
+}
+
