@@ -26,13 +26,25 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-body, html {
-  height: 100%; /* Ensure full viewport height */
-  margin: 0; /* Reset margins */
-  padding: 0; /* Reset padding */
-  overflow: hidden; /* Prevent scrollbar due to margin/padding resets */
-  background: black; /* Set a background color */
-  font-family: 'Oxanium', sans-serif; /* Set default font */
+body {
+    line-height: 1;
+    background: black; /* Default background to ensure text is visible */
+    color: white; /* Default text color to ensure it's readable on the black background */
+    font-family: 'Arial', sans-serif; /* You can change the font-family to your preference */
+}
+
+img {
+    max-width: 100%; /* Make images responsive, they will scale with their container */
+    height: auto;
+}
+
+/* Styles for full-screen background images on div elements if needed */
+.full-bg-image {
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the whole window regardless of size */
 }
 
 
@@ -40,29 +52,25 @@ body, html {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  z-index: -1;
+  width: 100%;
+  z-index: -1; /* Place image behind any other content on the page */
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; /* Cover the whole window regardless of size */
 }
 
 
 #welcome-message h1 {
-  font-family: 'Oxanium', sans-serif;
-  font-size: 6em; /* Increase font size */
-  background: -webkit-linear-gradient(white, yellow); /* For WebKit browsers */
-  background: linear-gradient(white, yellow); /* Standard syntax */
-  -webkit-background-clip: text;
-  background-clip: text; /* Add the standard property */
-  color: transparent; /* Fallback color (not text-fill-color which is non-standard) */
-  -webkit-text-fill-color: transparent; /* Only for WebKit browsers */
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Shadow for better readability */
-  text-align: center;
-  position: absolute; /* Position over background image */
-  top: 33vh; /* Adjust for positioning */
-  left: 50%; /* Centralize horizontally */
-  transform: translate(-50%, -50%); /* Offset the transform for centering */
-  z-index: 10; /* Above the background image */
+    font-family: 'Oxanium', sans-serif;
+    font-size: 6em; /* Make the font size much larger */
+    color: white;
+    background: linear-gradient(to right, yellow, white); /* Gradient text color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px #000; /* Shadow for text readability */
+    text-align: center;
+    padding-top: 20vh; /* Position the text lower on the page */
+    margin: 0 auto; /* Center the text block horizontally */
+    width: 100%; /* Ensure the width spans the full container */
 }
