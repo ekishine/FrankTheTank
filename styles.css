@@ -51,13 +51,7 @@ img {
 
 /* Add your custom classes and IDs below */
 /* Example of a custom class for text */
-/* .custom-text-style {
-    font-size: 2em; /* Example font size */
-    text-align: center; /* Center the text */
-    margin-top: 50vh; /* Center text vertically - 50% of the viewport height */
-    color: #FFFFFF; /* White color text */
-    text-shadow: 2px 2px #000000; /* Shadow effect for text for better readability */
-} */
+
 
 #background-image {
   position: fixed;
