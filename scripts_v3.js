@@ -1,10 +1,14 @@
+// Event listener for when the DOM content has loaded
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Get the 'welcome-message' div and set its inner HTML to include an h1 tag with the message
+    // Target the 'welcome-message' div and set its inner HTML
     var welcomeDiv = document.getElementById('welcome-message');
     if (welcomeDiv) {
-        welcomeDiv.innerHTML = '<h1>Welcome, Master Jedi! Your quest beckons...</h1>';
-        // Apply the CircleType effect to the new h1 element
-        new CircleType(document.querySelector('#welcome-message h1')).radius(384);
+        // Assuming the welcomeDiv already contains <h1>Welcome, Master Jedi! Your quest beckons...</h1>
+        // We need to target the h1 for the CircleType effect
+        var welcomeH1 = welcomeDiv.querySelector('h1');
+        if (welcomeH1) {
+            new CircleType(welcomeH1).radius(384); // Apply the effect to the h1 element
+        }
     }
 });
 
