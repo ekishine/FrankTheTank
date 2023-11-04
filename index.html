@@ -7,98 +7,53 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap');
 
-    /* Reset CSS */
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, details, embed, 
-    figure, figcaption, footer, header, hgroup, 
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
+    /* Your reset CSS and other styles */
 
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure, 
-    footer, header, hgroup, menu, nav, section {
-      display: block;
-    }
-
-body {
+    body {
       background-color: #000000; /* Solid black background */
+      font-family: 'Oxanium', cursive; /* Use your chosen font for the body */
+      /* Other body styles */
     }
-  body:before {
-    display: block;
-    content: "";
-    position: fixed;
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 0;
-    background-image: url('images/start.png'); /* Adjusted URL for your image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
 
-#message-container {
-  width: 100%;
-  position: absolute;
-  top: 20%;
-  text-align: center; /* Center the inline-block horizontally */
-}
+    body:before {
+      content: "";
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-image: url('images/start.png'); /* Your image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1; /* Keep the image behind the content */
+    }
 
-#welcome-message h1 {
-  display: inline-block; /* REQUIRED for CircleType.js */
-  font-size: 4em;
-  color: white;
-  background: linear-gradient(to right, yellow, white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 4px #000;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-    .curved-text span {
-      display: inline-block;
+    #message-container {
+      width: 100%;
       position: absolute;
-      bottom: auto;
-      left: 50%;
-      transform-origin: center 200px; /* Adjust the radius as needed */
-      font-family: 'Oxanium', cursive; /* Specifying the font for span */
+      top: 20%; /* Adjust this to position your message container */
+      text-align: center; /* Center the inline-block (text) horizontally */
     }
 
-    
-    html {
-      min-height: 100%;
-      position: relative;
+    #welcome-message h1 {
+      font-size: 4em;
+      color: white;
+      background: linear-gradient(to right, yellow, white); /* Gradient effect */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px #000;
+      padding: 0 10px; /* Padding for the text */
     }
 
+    /* Additional styles and HTML5 resets */
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/circletype@2.3.2/dist/circletype.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="message-container">
   <div id="welcome-message">
- <h1>Welcome, Master Jedi! Your quest beckons...</h1>
-    </div>
-  </div> 
-<script src="scripts_v3.js"></script>
-<!--<script src="scripts_v4.js"></script> -->
- <!-- <script src="circletext.js"></script>-->
+    <h1>Welcome, Master Jedi! Your quest beckons...</h1>
+  </div>
+</div>
+<!-- Removed scripts for CircleType.js -->
 </body>
 </html>
