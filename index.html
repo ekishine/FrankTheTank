@@ -52,24 +52,25 @@ body {
     z-index: -1;
   }
 
-    #message-container {
-      width: 100%;
-      position: absolute;
-      top: 20%;
-      left: 0;
-      right: 0;
-    }
+#message-container {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  text-align: center; /* Center the inline-block horizontally */
+}
 
-    #welcome-message h1 {
-      font-size: 6em;
-      color: white;
-      background: linear-gradient(to right, yellow, white);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 2px 2px 4px #000;
-      margin: 0 auto;
-      padding: 0 10px;
-    }
+#welcome-message h1 {
+  display: inline-block; /* REQUIRED for CircleType.js */
+  font-size: 6em;
+  color: white;
+  background: linear-gradient(to right, yellow, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px #000;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
     html {
       min-height: 100%;
       position: relative;
