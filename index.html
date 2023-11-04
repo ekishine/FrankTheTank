@@ -89,14 +89,15 @@ body {
     </div>-->
   <div id="message-container">
     <!-- Replace the following div with your SVG for curved text -->
-    <svg width="500" height="500" viewBox="0 0 500 500">
-      <path id="curve" fill="transparent" d="M100,250a150,150 0 1,0 300,0a150,150 0 1,0 -300,0"/>
-      <text width="500">
-        <textPath xlink:href="#curve" startOffset="50%">
-          Welcome, Master Jedi! Your quest beckons...
-        </textPath>
-      </text>
-    </svg>
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path id="curve" fill="transparent" d="M100,100 A50,50 0 1,1 300,100"/>
+  <text width="500" style="fill: white; font-size: 4em; font-family: 'Oxanium', sans-serif;">
+    <textPath xlink:href="#curve" startOffset="50%" text-anchor="middle" method="stretch" spacing="auto">
+      Welcome, Master Jedi! Your quest beckons...
+    </textPath>
+  </text>
+</svg>
+
 </div>
   </div> 
 </div>
