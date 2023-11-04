@@ -1,6 +1,6 @@
 /* Reset some basic elements */
 html, body, div, span, applet, object, iframe,
-h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -26,12 +26,13 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-body {
-    line-height: 1;
-    background: black; /* Default background to ensure text is visible */
-    color: white; /* Default text color to ensure it's readable on the black background */
-    font-family: 'Oxanium', sans-serif; /* You can change the font-family to your preference */
+/* Apply basic font and background styles to the body */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
 
 img {
     max-width: 100%; /* Make images responsive, they will scale with their container */
@@ -61,16 +62,25 @@ img {
 }
 
 
+/* Container for the message, which allows for better control */
+#message-container {
+    width: 100%; /* Full width of the viewport */
+    position: absolute; /* Absolute positioning for fine-tuning */
+    top: 20%; /* Adjust 'top' to move the welcome message up or down */
+    left: 0;
+    right: 0;
+}
+
+/* Styling for the welcome message itself */
 #welcome-message h1 {
     font-family: 'Oxanium', sans-serif;
-    font-size: 6em; /* Make the font size much larger */
-    color: white;
+    font-size: 6em; /* Large font size for visibility */
+    color: white; /* The text color */
     background: linear-gradient(to right, yellow, white); /* Gradient text color */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px #000; /* Shadow for text readability */
-    text-align: center;
-    padding-top: 20vh; /* Position the text lower on the page */
-    margin: 0 auto; /* Center the text block horizontally */
-    width: 100%; /* Ensure the width spans the full container */
+    text-shadow: 2px 2px 4px #000; /* Text shadow for depth */
+    text-align: center; /* Center the text within the div */
+    margin: 0 auto; /* Center the div block in the container */
+    /* No need for padding-top here as we're using the container to position it */
 }
