@@ -35,25 +35,18 @@
       display: block;
     }
 
-    /* Apply basic font and background styles to the body */
-    body, html {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: black; /* Default background */
-      font-family: 'Oxanium', sans-serif;
+body {
+      background-color: #000000; /* Solid black background */
     }
-
-
-    #background-image {
+    body:before {
+      display: block;
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-      background: url('/images/start.png')  no-repeat center center fixed;
+      top: -1in; right: -1in; bottom: -1in; left: -1in;
+      background-image: url('images/start.png'); /* Local image file path */
       background-size: cover;
+      background-repeat: no-repeat;
+      content: ""; /* This is necessary for the before content to show */
+      z-index: -1; /* Ensure it's behind other content but not too far back */
     }
 
     #message-container {
