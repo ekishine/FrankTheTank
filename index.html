@@ -1,6 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Commented out your existing head content -->
+</head>
+<body>
+<!-- Commented out your existing body content -->
+
+<!-- Start of minimal example to test CircleType effect -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minimal Example</title>
+<script src="https://cdn.jsdelivr.net/npm/circletype@2.3.1/dist/circletype.min.js"></script>
+</head>
+<body>
+<div id="message-container">
+  <div id="welcome-message">
+    <h1>Welcome, Master Jedi! Your quest beckons...</h1>
+  </div>
+</div>
+<script>
+  window.onload = function() {
+    var welcomeH1 = document.querySelector('#welcome-message h1');
+    if (welcomeH1) {
+      new CircleType(welcomeH1).radius(384);
+    }
+  };
+</script>
+<!-- End of minimal example -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frank's Adventure</title>
@@ -108,4 +162,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
 <!--<script src="scripts_v4.js"></script> -->
  <!-- <script src="circletext.js"></script>-->
 </body>
-</html>
+</html> -->
