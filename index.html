@@ -35,6 +35,178 @@
       display: block;
     }
 
+    body {
+      background-color: #000000; /* Solid black background */
+      font-family: 'Oxanium', cursive; /* Use your chosen font for the body */
+    }
+    body:before {
+      content: "";
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-image: url('images/starfield.jpg'); /* Your image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1; /* Keep the image behind the content */
+    }
+
+    #message-container {
+      width: 100%;
+      position: absolute;
+      top: 20%;
+      text-align: center; /* Center the inline-block (text) horizontally */
+    }
+
+    #welcome-message h1 {
+      display: inline-block; /* Required for CircleType.js */
+      font-size: 4em;
+      color: white;
+      background: linear-gradient(to right, #ff8c00, #ffffff); /* Orange to white gradient */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px #000000;
+      margin: 0 auto; /* Center the element horizontally */
+      padding: 0 10px; /* Padding on the left and right */
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.2/dist/circletype.min.js"></script>
+</head>
+<body>
+<div id="message-container">
+  <div id="welcome-message" class="curved-text">
+    <!-- Insert span elements for each letter with calculated rotation degrees -->
+    <span style="transform: rotate(-60deg);">W</span>
+    <span style="transform: rotate(-55deg);">e</span>
+    <span style="transform: rotate(-50deg);">l</span>
+    <span style="transform: rotate(-45deg);">c</span>
+    <span style="transform: rotate(-40deg);">o</span>
+    <span style="transform: rotate(-35deg);">m</span>
+    <span style="transform: rotate(-30deg);">e</span>
+    <span style="transform: rotate(-25deg);">,</span>
+    <span style="transform: rotate(-20deg);"> </span>
+    <span style="transform: rotate(-15deg);">M</span>
+    <span style="transform: rotate(-10deg);">a</span>
+    <span style="transform: rotate(-5deg);">s</span>
+    <span style="transform: rotate(0deg);">t</span>
+    <span style="transform: rotate(5deg);">e</span>
+    <span style="transform: rotate(10deg);">r</span>
+    <span style="transform: rotate(15deg);"> </span>
+    <span style="transform: rotate(20deg);">J</span>
+    <span style="transform: rotate(25deg);">e</span>
+    <span style="transform: rotate(30deg);">d</span>
+    <span style="transform: rotate(35deg);">i</span>
+    <span style="transform: rotate(40deg);">!</span>
+    <span style="transform: rotate(45deg);"> </span>
+    <span style="transform: rotate(50deg);">Y</span>
+    <span style="transform: rotate(55deg);">o</span>
+    <span style="transform: rotate(60deg);">u</span>
+    <span style="transform: rotate(65deg);">r</span>
+    <span style="transform: rotate(70deg);"> </span>
+    <span style="transform: rotate(75deg);">q</span>
+    <span style="transform: rotate(80deg);">u</span>
+    <span style="transform: rotate(85deg);">e</span>
+    <span style="transform: rotate(90deg);">s</span>
+    <span style="transform: rotate(95deg);">t</span>
+    <span style="transform: rotate(100deg);"> </span>
+    <span style="transform: rotate(105deg);">b</span>
+    <span style="transform: rotate(110deg);">e</span>
+    <span style="transform: rotate(115deg);">c</span>
+    <span style="transform: rotate(120deg);">k</span>
+    <span style="transform: rotate(125deg);">o</span>
+    <span style="transform: rotate(130deg);">n</span>
+    <span style="transform: rotate(135deg);">s</span>
+    <span style="transform: rotate(140deg);">.</span>
+    <span style="transform: rotate(145deg);">.</span>
+    <span style="transform: rotate(150deg);">.</span>
+    <!-- Continue with additional characters as needed, adjusting rotate values -->
+  </div>
+</div>
+<script src="scripts_v3.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frank's Adventure</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap');
+
+    /* Reset CSS */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+
 body {
       background-color: #000000; /* Solid black background */
     }
@@ -70,7 +242,16 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+    .curved-text span {
+      display: inline-block;
+      position: absolute;
+      bottom: auto;
+      left: 50%;
+      transform-origin: center 200px; /* Adjust the radius as needed */
+      font-family: 'Oxanium', cursive; /* Specifying the font for span */
+    }
 
+    
     html {
       min-height: 100%;
       position: relative;
@@ -79,6 +260,7 @@ body {
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.2/dist/circletype.min.js"></script>
 </head>
 <body>
@@ -91,4 +273,4 @@ body {
 <!--<script src="scripts_v4.js"></script> -->
  <!-- <script src="circletext.js"></script>-->
 </body>
-</html>
+</html> -->
