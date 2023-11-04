@@ -71,12 +71,24 @@ img {
 
 /* Target h1 within the welcome-message div */
 #welcome-message h1 {
-  font-family: 'Dancing Script', cursive; /* Use the font you imported */
-  font-size: 4em; /* Adjust size to fit your design */
-  color: white; /* Choose the text color that fits your theme */
-  text-align: center; /* Center the text horizontally */
-  padding-top: 10%; /* Adjust padding to position your text vertically */
-  transform: rotate(-2deg) skew(-5deg); /* Add some "melting" effect */
-  text-shadow: 2px 2px 4px #000; /* Shadow for text for better readability */
+    font-family: 'Arial', sans-serif; /* Replace with your desired font */
+    font-size: 3em; /* Adjust the size as needed */
+    color: white; /* Fallback color */
+    background: -webkit-linear-gradient(white, yellow); /* For Safari 5.1 to 6.0 */
+    background: linear-gradient(white, yellow); /* Standard syntax for gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; /* Simulated border effect using shadow */
 }
+
+/* Since the actual text is invisible due to 'text-fill-color: transparent', we apply the shadow to the background which is clipped to the text */
+
 
