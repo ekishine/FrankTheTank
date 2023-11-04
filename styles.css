@@ -26,8 +26,6 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600&display=swap');
-
 body, html {
   height: 100%; /* Ensure full viewport height */
   margin: 0; /* Reset margins */
@@ -52,6 +50,7 @@ body, html {
 
 
 #welcome-message h1 {
+  font-family: 'Oxanium', sans-serif;
   font-size: 6em; /* Increase font size */
   background: -webkit-linear-gradient(white, yellow); /* For WebKit browsers */
   background: linear-gradient(white, yellow); /* Standard syntax */
