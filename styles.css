@@ -56,3 +56,15 @@ img {
     color: #FFFFFF; /* White color text */
     text-shadow: 2px 2px #000000; /* Shadow effect for text for better readability */
 }
+
+#background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; /* Place image behind any other content on the page */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover the whole window regardless of size */
+}
