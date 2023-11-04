@@ -73,19 +73,22 @@ img {
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600&display=swap');
 /* ... other styles ... */
 
+/* ... previous CSS ... */
+
 #welcome-message h1 {
     font-family: 'Oxanium', sans-serif; /* Now using the Oxanium font */
-    font-size: 4em; /* Adjust the size as needed */
+    font-size: 8em; /* Increase the font size */
     color: white; /* Fallback color */
-    background: linear-gradient(white, yellow); /* Gradient text color */
+    background: linear-gradient(135deg, #FFFFFF 30%, #FFFF00 70%); /* Updated gradient for cosmic style */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Text border effect */
+    text-shadow: 4px 4px 4px #000; /* Stronger text shadow for legibility */
     text-align: center;
-    margin-top: 33vh; /* Adjust margin to place text in the upper third of the viewport */
+    margin-top: 15vh; /* Positioning the text a bit lower */
     display: block;
     position: relative;
 }
+
 
 
 
