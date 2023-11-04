@@ -52,7 +52,7 @@
       right: 0;
       bottom: 0;
       z-index: -1;
-      background: url('images/start.png') center center no-repeat;
+      background: url('images/start.png')  no-repeat center center fixed;
       background-size: cover;
     }
 
@@ -85,6 +85,7 @@
 </head>
 <body>
   <div id="background-image"></div> <!-- Background image now set with a div -->
+  <img src="images/start.png" id="background-image" alt="Star Image" onerror="alert('Image failed to load!');">
   <div id="message-container">
     <div id="welcome-message">
       <h1>Welcome, Master Jedi! Your quest beckons...</h1>
