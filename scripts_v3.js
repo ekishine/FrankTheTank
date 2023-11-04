@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    // Get the 'welcome-message' div and set its inner HTML to include an h1 tag with the message
     var welcomeDiv = document.getElementById('welcome-message');
     if (welcomeDiv) {
-        // Assuming the welcomeDiv already contains <h1> with the text from your HTML
-        var h1 = welcomeDiv.querySelector('h1');
-        if(h1){
-            new CircleType(h1).radius(384); // Apply the CircleType effect to the h1 element
-        }
+        welcomeDiv.innerHTML = '<h1>Welcome, Master Jedi! Your quest beckons...</h1>';
+        // Apply the CircleType effect to the new h1 element
+        new CircleType(document.querySelector('#welcome-message h1')).radius(384);
     }
 });
 
